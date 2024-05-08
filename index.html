@@ -19,7 +19,7 @@
             flex-direction: column;
             align-items: center;
             padding: 20px;
-            margin-bottom: 100px; /* Para hacer espacio para el footer */
+            margin-bottom: 50px; /* Para hacer espacio para el footer */
         }
         .logo {
             width: 200px;
@@ -44,17 +44,17 @@
             margin-bottom: 10px;
         }
         .download-button {
-            background-color: #006666;
-            color: #E0E0E0;
-            border: none;
-            border-radius: 12px;
-            padding: 10px 20px;
-            font-size: 1.5em;
             cursor: pointer;
             transition: all 0.3s;
+            display: inline-block;
         }
-        .download-button:hover {
-            background-color: #086BC1;
+        .download-button img {
+            width: 200px;
+            height: auto;
+            border-radius: 12px;
+        }
+        .download-button:hover img {
+            transform: scale(1.1);
         }
         .footer {
             position: fixed;
@@ -75,17 +75,12 @@
 
         <div class="info">
             <img class="logo" src="logo.png" alt="MyGnuHealth Logo">
-            <p>MyGnuHealth es una aplicación de salud que te permite gestionar tus datos médicos de manera segura y eficiente.</p>
-            <p>¡Descárgala ahora y mantén tu salud bajo control!</p>
+            <p>¡Gracias por ver la presentación!</p> <p> Ahora puedes descargar la aplicación para tu dispositivo Android.</p>
         </div>
 
         <a href="https://github.com/MarioMunPeq/DescargaApkGnuHealth/raw/main/MyGnuHealthApp.apk" download class="download-button">
-            Descargar APK
+            <img src="boton-descarga.png" alt="Descargar APK">
         </a>
-
-        <div class="agradecimiento">
-            <p>¡Gracias por ver la presentación!</p>
-        </div>
     </div>
 
     <div class="footer">
