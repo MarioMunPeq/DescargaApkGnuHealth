@@ -10,12 +10,15 @@
             padding: 0;
             background-color: #d7edf0;
             font-family: Arial, sans-serif;
+            position: relative;
+            min-height: 100vh;
         }
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px;
+            margin-bottom: 50px; /* Para hacer espacio para el footer */
         }
         .logo {
             width: 200px;
@@ -52,10 +55,15 @@
         .download-button:hover {
             background-color: #086BC1;
         }
-        .agradecimiento {
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333333;
+            padding: 10px;
             text-align: center;
-            font-style: italic;
-            color: #666666;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -72,10 +80,10 @@
         <a href="https://github.com/MarioMunPeq/DescargaApkGnuHealth/raw/main/MyGnuHealthApp.apk" download class="download-button">
             Descargar APK
         </a>
+    </div>
 
-        <div class="agradecimiento">
-            <p>¡Gracias por estar en la presentación!</p>
-        </div>
+    <div class="footer">
+        <img src="footer-image.jpg" alt="Footer Image" style="max-width: 100%;">
     </div>
 </body>
 </html>
